@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="12dp"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="12dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Singup"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edit_fname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter First Name"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        app:met_textColorHint="@color/colorPrimary"
+        app:met_underlineColor="@color/colorPrimary" />
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edit_lname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Last Name"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        app:met_textColorHint="@color/colorPrimary"
+        app:met_underlineColor="@color/colorPrimary" />
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email Id"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        app:met_autoValidate="true"
+        app:met_textColorHint="@color/colorPrimary"
+        app:met_underlineColor="@color/colorPrimary" />
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:imeOptions="actionNext"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        app:met_autoValidate="true"
+        app:met_textColorHint="@color/colorPrimary"
+        app:met_underlineColor="@color/colorPrimary" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner_blood_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:entries="@array/blood_groups"
+            android:textAlignment="center" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edit_age"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="Age"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            app:met_autoValidate="true"
+            app:met_textColorHint="@color/colorPrimary"
+            app:met_underlineColor="@color/colorPrimary" />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:text="SIGN UP"
+            android:textColor="@color/white" />
+
+        <ProgressBar
+            android:id="@+id/progress_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:theme="@style/CustomTheme" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>

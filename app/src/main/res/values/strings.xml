@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Blood Bank</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Please Login</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="blood_groups">
+        <item>A</item>
+        <item>B</item>
+        <item>A-</item>
+        <item>B-</item>
+        <item>O</item>
+        <item>AB-</item>
+    </string-array>
+</resources>
